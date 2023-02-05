@@ -1,0 +1,53 @@
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+
+label {
+    color: #e5e5e5;
+}
+
+input, textarea {
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    color: #e5e5e5;
+    background-color: #404040;
+    margin-top: 3px;
+    caret-color: #181818;
+}
+
+input {
+    height: 30px;
+    font-size: 16px;
+    padding-left: 7px;
+}
+
+textarea {
+    height: 50px;
+    font-size: 16px;
+    padding-left: 7px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button {
+    margin-top: 14px;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: #c0c0c0 solid 1px;
+    color: #c0c0c0;
+    background: #262626;
+}
+
+
+button:hover {
+    border: white solid 1px;
+    color: white;
+}
+

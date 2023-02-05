@@ -1,0 +1,21 @@
+ul.input-dropdown {
+    background-color: #404040;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 3px;
+    height: 130px;
+    overflow-y: scroll;
+}
+
+ul.input-dropdown li {
+    margin-left: 10px;
+    border-bottom: #cdcdcd solid 1px;
+    padding: 10px 5px;
+}
+
+ul.input-dropdown li:hover {
+    margin-left: 10px;
+    border-bottom: #262626 solid 1px;
+    padding: 10px 5px;
+    background-color: #262626;
+}
