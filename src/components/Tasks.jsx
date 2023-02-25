@@ -12,7 +12,7 @@ function Tasks({ members, setMembers, ProjectId }) {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://localhost:5000/getTasks/${ProjectId}`,
+      url: `https://task-wave.herokuapp.com/getTasks/${ProjectId}`,
     }).then((response) => {
       console.log(response.data.tasks)
       setListOfTasks(response.data.tasks);

@@ -22,7 +22,7 @@ function NewTaskModalForm({ members, setMembers, ProjectId, SetStatusChanger, St
 
         console.log(newTask.projectId);
       
-        await fetch('http://localhost:5000/addNewTask', {
+        await fetch('https://task-wave.herokuapp.com/addNewTask', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

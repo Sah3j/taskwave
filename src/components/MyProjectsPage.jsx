@@ -10,7 +10,7 @@ function MyProjectsPage() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
-    Axios.get("http://localhost:5000/getProjects").then((response) => {
+    Axios.get("https://task-wave.herokuapp.com/getProjects").then((response) => {
       setListOfProjects(response.data);
     })
   }, [])

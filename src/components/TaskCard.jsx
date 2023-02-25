@@ -7,7 +7,7 @@ function TaskCard({ TaskDescription, TaskDueDate, TaskMember,  TaskStatus, TaskI
     async function handleStatusChange(e) {
         const status = e.target.value
         try {
-            const res = await axios.put(`http://localhost:5000/updateTaskStatus/${ProjectId}/${TaskId}`, { status });
+            const res = await axios.put(`https://task-wave.herokuapp.com/updateTaskStatus/${ProjectId}/${TaskId}`, { status });
             console.log(res.data); // log the updated task
           } catch (err) {
             console.error(err);

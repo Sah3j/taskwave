@@ -26,7 +26,7 @@ function ModalForm() {
 
       console.log(projectStartDate);
     
-      await fetch("http://localhost:5000/createproject", {
+      await fetch("https://task-wave.herokuapp.com/createproject", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
