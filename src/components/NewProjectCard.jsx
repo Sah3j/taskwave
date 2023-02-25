@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import NewProjectModal from './NewProjectModal';
-import './NewProductCard.css'
+import './NewProjectCard.css'
 
 function NewProjectCard() {
 

@@ -1,0 +1,75 @@
+.task-card {
+    min-height: 100px;
+    width: 250px;
+    background-color: #181818;
+    margin: 20px;
+    border-radius: 10px;
+    border: #4c4c4c solid 1px;
+    color: #4c4c4c;
+    padding: 10px;
+}
+
+.task-member {
+    background-color: #4c4c4c;
+    color: #181818;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 2px 10px;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.task-card-date {
+    margin-top: 10px;
+}
+
+.task-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.status-changer {
+    display: flex;
+    cursor: pointer;
+}
+
+.change-left:hover {
+    color: white;
+}
+
+.change-right:hover {
+    color: white;
+}
+
+.status-changer-dropdown-btn {
+    display: flex;
+    background-color: #4c4c4c;
+    color: #181818;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 2px 10px;
+}
+
+.status-changer-dropdown-text {
+    margin-top: 2px;
+}
+
+.status-changer select {
+    background-color: transparent;
+    border-radius: 5px;
+    border: #4c4c4c solid 1px;
+    padding: 0 5px;
+    color: #4c4c4c;
+}
+
+.status-changer select:hover {
+    border: white solid 1px;
+    color: white;
+    transition: 0.2s;
+}
+

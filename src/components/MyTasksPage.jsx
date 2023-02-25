@@ -2,7 +2,9 @@ import React from 'react'
 
 function MyTasksPage() {
   return (
-    <div>MyTasksPage</div>
+    <div>
+      <h3>Currently working on this page...</h3>
+    </div>
   )
 }
 

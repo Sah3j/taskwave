@@ -1,0 +1,31 @@
+.card {
+    height: 250px;
+    width: 250px;
+    background-color: #181818;
+    margin: 20px;
+    border-radius: 10px;
+    border: #4c4c4c solid 1px;
+    color: #4c4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.plus-sign {
+    margin: 10px auto;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.card:hover {
+    border: white solid 1px;
+    color: white;
+    transition: 0.5s;
+}

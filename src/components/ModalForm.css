@@ -1,8 +1,9 @@
-form div {
+.new-project-form div:not(:nth-child(3)) {
     display: flex;
     flex-direction: column;
     margin-top: 14px;
 }
+
 
 label {
     color: #e5e5e5;
@@ -51,3 +52,7 @@ button:hover {
     color: white;
 }
 
+.project-dates {
+    display: flex;
+    justify-content: space-between;
+}

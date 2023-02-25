@@ -1,0 +1,94 @@
+.tasks-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.tasks-not-started {
+    grid-column: 1 / 2;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+}
+
+.tasks-in-progress {
+    grid-column: 2/3;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks-completed {
+    grid-column: 3/4;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+}
+
+.tasks-not-started h3,
+.tasks-in-progress h3,
+.tasks-completed h3 {
+    margin: 10px 0px;
+}
+
+.tasks-status-selecter {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .tasks-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        background-color: #181818;
+    }
+
+    .tasks-not-started,
+    .tasks-in-progress,
+    .tasks-completed {
+        display: none;
+    }
+
+    .tasks-not-started.show,
+    .tasks-in-progress.show,
+    .tasks-completed.show {
+        display: flex;
+    }
+
+    .tasks-not-started h3,
+    .tasks-in-progress h3,
+    .tasks-completed h3 {
+        display: none;
+    }
+
+    .tasks-status-selecter {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .tasks-status-selecter select {
+        background-color: transparent;
+        font-size: 18px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: #4c4c4c solid 1px;
+        color: #4c4c4c;
+    }
+
+    .tasks-status-selecter select:hover {
+        border: white solid 1px;
+        color: white;
+        transition: 0.2s;
+    }
+}

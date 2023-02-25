@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import './SearchableInputBox.css'
 
-function SearchableInputBox() {
+function SearchableInputBox({ selectedMembers, setSelectedMembers, members, setMembers }) {
 
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedMembers, setSelectedMembers] = useState([]);
-    const [members, setMembers] = useState([
-        'John Doe', 'Jane Smith', 'Jim Smith', 'Jon Doe', 'Joe Mama'
-    ]);
+    //const [selectedMembers, setSelectedMembers] = useState([]);
     const filteredMembers = members.filter(
         member => member.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -45,7 +42,7 @@ function SearchableInputBox() {
             )}
             {selectedMembers.length > 0 && (
                 <div>
-                    <lebel>Selected Members:</lebel>
+                    <label>Selected Members:</label>
                     <ul>
                         {selectedMembers.map(member => (
                             <li key={member}>{member}</li>
